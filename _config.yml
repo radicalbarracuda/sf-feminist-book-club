@@ -11,4 +11,5 @@ sass:
   sass_dir: _sass
 kramdown:
   input: GFM
-include: ['_pages']
+include: ['_pages', '_posts']
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']

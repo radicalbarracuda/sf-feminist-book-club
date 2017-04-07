@@ -3,6 +3,7 @@ ruby RUBY_VERSION
 
 # Utils
 gem "rake"
+gem 'rack-jekyll'
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
