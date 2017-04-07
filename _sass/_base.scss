@@ -1,0 +1,23 @@
+$content-width: 700px;
+
+$font-style: 'acumin-pro', sans-serif;
+$font-color: #000000;
+
+$link-color: #07b57a;
+$link-hover-color: #000000;
+
+$heading-font: 'acumin-pro-semi-condensed', sans-serif;
+$heading-font-color: #444444;
+
+$subheading-font: 'acumin-pro-condensed', sans-serif;
+$subheading-font-color: #444444;
+
+$code-font: 'source-code-pro', monospace;
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
