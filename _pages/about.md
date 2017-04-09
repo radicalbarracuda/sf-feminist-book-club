@@ -1,6 +1,7 @@
 ---
 layout: pages
 title:  "About Radical Barracuda"
+permalink: "/about/"
 categories: about
 ---
 
