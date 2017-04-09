@@ -1,10 +1,10 @@
 title: SF Feminist Book Club
-email: liz.hubertz+feministbookclub@gmail.com
+email: radicalbarracuda@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Codify our practices and the reasoning behind them. Open source our study
   guides and materials.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://localhost:4000"
+url: "https://radicalbarracuda.herokuapp.com"
 
 # Build settings
 sass:
