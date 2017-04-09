@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   guides and materials.
 baseurl: "/sf-feminist-book-club" # the subpath of your site, e.g. /blog
 url: "https://radicalbarracuda.github.io"
-
+permalink: /:title/
 # Build settings
 sass:
   sass_dir: _sass
