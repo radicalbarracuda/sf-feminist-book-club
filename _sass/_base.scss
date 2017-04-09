@@ -21,7 +21,7 @@ $line-heights: (
 }
 
 @function line-height($level) {
-  @return map-get($line-height, $level);
+  @return map-get($line-heights, $level);
 }
 
 @mixin type-setting($level: 0) {
@@ -29,7 +29,7 @@ $line-heights: (
   line-height: line-height($level);
 }
 
-$base-font-style: Crimson Text, serif;
+$font-style: Crimson Text, serif;
 $font-color: hsla(0,0%,0%,0.73);
 
 $bold-font-weight: 600;
@@ -66,7 +66,7 @@ html {
 
 body {
   color: hsla(0, 0%, 0%, 0.73);
-  font-family: $base-font-style;
+  font-family: $font-style;
   font-weight: 400;
   word-wrap: break-word;
 }
