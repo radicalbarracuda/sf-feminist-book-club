@@ -37,15 +37,26 @@ $monospaced-font: Consolas,"Roboto Mono","Liberation Mono",Menlo,Courier,monospa
 
 $base-spacing: $base-line-height;
 
-$link-color: #07b57a;
-$link-hover-color: #000000;
+// Grey on black color palette
+
+$primary-color-dark:   #455A64;
+$primary-color:        #607D8B;
+$primary-color-light:  #CFD8DC;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #9E9E9E;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+
+$link-color: $primary-color;
+$link-hover-color: $primary-color-dark;
 
 $heading-font: 'Rosario', serif;
-$heading-font-color: hsla(0,0%,0%,0.9);
+$heading-font-color: $primary-text-color;
 $heading-font-weight: 700;
 
 $subheading-font: $heading-font;
-$subheading-font-color: $heading-font-color;
+$subheading-font-color: $secondary-text-color;
 
 $code-font: "source-code-pro", monospace;
 
