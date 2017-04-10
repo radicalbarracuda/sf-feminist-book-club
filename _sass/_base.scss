@@ -62,15 +62,14 @@ html {
 }
 
 html {
-  font-size: type-setting(0);
-  line-height: $base-line-height;
+  @include type-setting(0);
   overflow-y: scroll;
 }
 
 body {
+  @include type-setting(0);
   color: $primary-color;
   font-family: $font-style;
-  font-size: type-setting(0);
   font-weight: 400;
   word-wrap: break-word;
 }
@@ -89,54 +88,52 @@ h6 {
   color: $heading-font-color;
   font-family: $heading-font;
   font-weight: $heading-font-weight;
-  line-height: line-height(2);
   margin: line-height(2) 0 0 line-height(-1);
   padding: 0;
   text-rendering: optimizeLegibility;
 }
 
 h1 {
-  font-size: type-setting(2);
+  @include type-setting(2);
 }
 
 h2 {
-  font-size: type-setting(1);
+  @include type-setting(1);
 }
 
 h3 {
+  @include type-setting(1);
   color: $subheading-font-color;
-  font-size: type-setting(1);
   font-weight: $bold-font-weight;
 }
 
 h4 {
+  @include type-setting(1);
   color: $subheading-font-color;
-  font-size: type-setting(1);
   font-weight: $bold-font-weight;
 }
 
 h5 {
+  @include type-setting(-1);
   color: $subheading-font-color;
-  font-size: type-setting(-1);
   line-height: $base-line-height;
 }
 
 h6 {
-  font-size: type-setting(-1);
+  @include type-setting(-1);
   line-height: $base-line-height;
 }
 
 ul,
 ol {
   list-style-image: none;
-  list-style-position: inside;
   margin: 0 0 $base-spacing line-height(-1);
   padding: 0;
 }
 
 li > ol,
 li > ul {
-  margin: calc(${$base-spacing} / 2) 0 calc(${$base-spacing} / 2) $base-spacing;
+  margin: ($base-spacing / 2) 0 ($base-spacing / 2) $base-spacing;
 }
 
 dl,
@@ -153,9 +150,9 @@ noscript {
 
 
 pre {
+  @include type-setting(-1);
   background: $contrast-background;
   border-radius: 3px;
-  font-size: type-setting(-1);
   line-height: line-height(-1);
   margin: 0 0 0 $base-spacing;
   overflow: auto;
@@ -168,8 +165,8 @@ pre {
 }
 
 table {
+  @include type-setting(1);
   border-collapse: collapse;
-  font-size: type-setting(1);
   line-height: $base-line-height;
   margin: 0 0 0 $base-spacing;
   padding: 0;
@@ -179,17 +176,17 @@ table {
 $blockquote-color: $primary-color-dark;
 
 blockquote {
+  @include type-setting(2);
   border-left: .28125rem solid $divider-color;
   color: $blockquote-color;
-  font-size: type-setting(2);
   font-style: italic;
   line-height: $base-line-height;
   margin: 0 0 0 $base-spacing;
   padding: 0 0 0 1.21875rem;
 
   cite {
+    @include type-setting(1);
     color: $heading-font-color;
-    font-size: type-setting(1);
     font-style: normal;
     font-weight: 400;
     line-height: $base-line-height;
@@ -220,7 +217,7 @@ th {
 }
 
 li {
-  margin-bottom: calc(${$base-spacing} / 2);
+  margin-bottom: ($base-spacing / 2);
 }
 
 ol li,
@@ -231,7 +228,7 @@ ul li {
 kbd,
 samp,
 code {
-  font-size: type-setting(-1);
+  @include type-setting(-1);
   line-height: $base-line-height;
 }
 
