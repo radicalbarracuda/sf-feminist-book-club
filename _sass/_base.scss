@@ -1,18 +1,16 @@
 $content-width: 700px;
-$base-font-size: 1rem;
-$base-line-height: $base-font-size * 1.25;
 
 $type-scale: (
-  -1: 0.75rem,  // small text
+  -1: .75rem,  // small text
   0: 1rem,      // body text
   1: 1.333rem,  // large text
   2: 1.777rem   // main heading
 );
 
 $line-heights: (
-  -1: $base-line-height,
+  -1: $base-line-height * .6667,
   0: $base-line-height,
-  1: $base-line-height * 2,
+  1: $base-line-height * 1.25,
   2: $base-line-height * 2
 );
 
@@ -29,24 +27,22 @@ $line-heights: (
   line-height: line-height($level);
 }
 
-$font-style: Crimson Text, serif;
-$font-color: hsla(0,0%,0%,0.73);
-
-$bold-font-weight: 600;
-$monospaced-font: Consolas,"Roboto Mono","Liberation Mono",Menlo,Courier,monospace;
-
+$base-font-size: type-scale(0);
+$base-line-height: line-height(1);
 $base-spacing: $base-line-height;
+$font-style: Crimson Text, serif;
+$monospaced-font: Consolas, 'Roboto Mono', 'Liberation Mono', Menlo, Courier, monospace;
+$bold-font-weight: 600;
+$font-color: hsla(0, 0%, 0%, .73);
+$contrast-background: hsla(0, 0%, 0%, .04);
 
 // Grey on black color palette
 
-$primary-color-dark:   #455A64;
-$primary-color:        #607D8B;
-$primary-color-light:  #CFD8DC;
-$primary-color-text:   #FFFFFF;
-$accent-color:         #9E9E9E;
+$primary-color-dark:   #455a64;
+$primary-color:        hsla(0, 0%, 0%, .73);
 $primary-text-color:   #212121;
 $secondary-text-color: #757575;
-$divider-color:        #BDBDBD;
+$divider-color:        hsla(0, 0%, 0%, .2);
 
 $link-color: $primary-color;
 $link-hover-color: $primary-color-dark;
@@ -58,33 +54,29 @@ $heading-font-weight: 700;
 $subheading-font: $heading-font;
 $subheading-font-color: $secondary-text-color;
 
-$code-font: "source-code-pro", monospace;
-
 *,
 *::before,
-*::after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+*::after,
+html {
   box-sizing: border-box;
 }
 
 html {
   font-size: $base-font-size;
   line-height: $base-line-height;
-  box-sizing: border-box;
   overflow-y: scroll;
 }
 
 body {
-  color: hsla(0, 0%, 0%, 0.73);
+  color: $primary-color;
   font-family: $font-style;
   font-weight: 400;
   word-wrap: break-word;
 }
 
 img {
-  max-width: 100%;
   margin: 0 0 0 $base-spacing;
+  max-width: 100%;
 }
 
 h1,
@@ -93,13 +85,13 @@ h3,
 h4,
 h5,
 h6 {
-  margin: line-height(2) 0 0 line-height(-1);
-  padding: 0;
-  color: $font-color;
+  color: $primary-font-color-dark;
   font-family: $heading-font;
   font-weight: $heading-font-weight;
-  text-rendering: optimizeLegibility;
   line-height: line-height(2);
+  margin: line-height(2) 0 0 line-height(-1);
+  padding: 0;
+  text-rendering: optimizeLegibility;
 }
 
 h1 {
@@ -107,7 +99,7 @@ h1 {
 }
 
 h2 {
-   font-size: type-setting(1);
+  font-size: type-setting(1);
 }
 
 h3 {
@@ -130,18 +122,15 @@ h6 {
 
 ul,
 ol {
-  margin: 0 0 $base-spacing $base-spacing;
-  padding: 0;
-  list-style-position: outside;
   list-style-image: none;
+  list-style-position: inside;
+  margin: 0 0 $base-spacing line-height(-1);
+  padding: 0;
 }
 
-ul, ol {
-  margin-left: calc($base-spacing * .6667);
-}
-
-li > ol, li > ul {
-  margin: 0 0 calc($base-spacing * .6667) 0;
+li > ol,
+li > ul {
+  margin: calc(${$base-spacing} / 2) 0 calc(${$base-spacing} / 2) $base-spacing;
 }
 
 dl,
@@ -156,48 +145,65 @@ noscript {
   padding: 0;
 }
 
+
 pre {
-  margin: 0 0 0 $base-spacing;
-  padding: 0;
+  background: $contrast-background;
+  border-radius: 3px;
   font-size: type-setting(-1);
   line-height: line-height(-1);
-  background: hsla(0, 0%, 0%, 0.04);
-  border-radius: 3px;
+  margin: 0 0 0 $base-spacing;
   overflow: auto;
   padding: $base-spacing;
+
+  code {
+    background: none;
+    line-height: line-height(1);
+  }
 }
 
 table {
-  margin: 0 0 0 $base-spacing;
-  padding: 0;
+  border-collapse: collapse;
   font-size: type-setting(1);
   line-height: $base-line-height;
-  border-collapse: collapse;
+  margin: 0 0 0 $base-spacing;
+  padding: 0;
   width: 100%;
 }
 
+$blockquote-color: $primary-text-dark;
+
 blockquote {
-  margin: 0 0 0 $base-spacing;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 1.21875rem;
-  padding-right: 0;
-  padding-top: 0;
-  font-size: 1.1487rem;
-  line-height: $base-line-height;
-  border-left: 0.28125rem solid #ff5700;
-  color: hsla(0, 0%, 0%, 0.59);
+  border-left: .28125rem solid $divider-color;
+  color: $blockquote-color;
+  font-size: type-setting(2);
   font-style: italic;
+  line-height: $base-line-height;
+  margin: 0 0 0 $base-spacing;
+  padding: 0 0 0 1.21875rem;
+
+  cite {
+    color: $heading-font-color;
+    font-size: type-setting(1);
+    font-style: normal;
+    font-weight: 400;
+    line-height: $base-line-height;
+
+    &::before {
+      content: '— ';
+    }
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
 }
 
 hr {
-  margin: 0 0 0 calc($base-spacing - 1px);
-  padding: 0;
-  background: hsla(0, 0%, 0%, 0.2);
-  border: none;
+  background: $divider-color;
+  border: 0;
   height: 1px;
+  margin: 0 0 0 calc(${$base-spacing} - 1px);
+  padding: 0;
 }
 
 b,
@@ -208,17 +214,12 @@ th {
 }
 
 li {
-  margin-bottom: calc($base-spacing / 2);
+  margin-bottom: calc(${$base-spacing} / 2);
 }
 
 ol li,
 ul li {
   padding-left: 0;
-}
-
-li > ol,
-li > ul {
-  margin: calc($base-spacing / 2) 0 calc($base-spacing / 2) $base-spacing;
 }
 
 kbd,
@@ -229,14 +230,9 @@ code {
 }
 
 acronym,
-abbr,
-abbr[title] {
-  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
+abbr {
+  border-bottom: 1px dotted $divider-color;
   cursor: help;
-}
-
-abbr[title] {
-  text-decoration: none;
 }
 
 thead,
@@ -245,67 +241,60 @@ th {
   text-align: left;
 }
 
-td, th {
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
+td,
+th {
+  border-bottom: 1px solid $divider-color;
   font-feature-settings: tnum;
-  padding: 0.75rem 1rem calc(0.75rem - 1px) 1rem;
+  padding: .75rem 1rem calc(.75rem - 1px);
 }
 
-th:first-child, td:first-child {
+th:first-child,
+td:first-child {
   padding-left: 0;
 }
 
-th:last-child, td:last-child {
+th:last-child,
+td:last-child {
   padding-right: 0;
 }
 
-tt, code {
-  background-color: hsla(0, 0%, 0%, 0.04);
+tt,
+code {
+  background-color: $contrast-background;
   border-radius: 3px;
   font-family: $monospaced-font;
-  padding: 0.2em 0 0.2em 0;
+  padding: .2em 0;
 }
 
-pre code {
-  background: none;
-  line-height: 1.42;
+code:before,
+code:after,
+tt:before,
+tt:after {
+  content: ' ';
+  letter-spacing: -.2em;
 }
 
-code:before, code:after, tt:before, tt:after {
-  letter-spacing: -0.2em;
-  content: " ";
+pre code:before,
+pre code:after,
+pre tt:before,
+pre tt:after {
+  content: '';
 }
 
-pre code:before, pre code:after, pre tt:before, pre tt:after {
-  content: "";
-}
+$black: #000;
+$white: #fff;
 
 a {
+  background-image: linear-gradient(to top, $black, $black 1px, $link-color 1px, $link-color 2px, $black 2px);
   color: $link-color;
   text-decoration: none;
-  text-shadow: .03em 0 #fff,-.03em 0 #fff,0 .03em #fff,0 -.03em #fff,.06em 0 #fff,-.06em 0 #fff,.09em 0 #fff,-.09em 0 #fff,.12em 0 #fff,-.12em 0 #fff,.15em 0 #fff,-.15em 0 #fff;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #link-color 1px, #link-color 2px, rgba(0, 0, 0, 0) 2px);
+  text-shadow: .03em 0 $white, -.03em 0 $white, 0 .03em $white, 0 -.03em $white, .06em 0 $white, -.06em 0 $white, .09em 0 $white, -.09em 0 $white, .12em 0 $white, -.12em 0 $white, .15em 0 $white, -.15em 0 $white;
 }
 
-a:hover, a:active {
-  text-shadow: none;
+a:hover,
+a:active {
   background-image: none;
-}
-
-blockquote > :last-child {
-  margin-bottom: 0;
-}
-
-blockquote cite {
-  font-size: type-setting(1);
-  line-height: $base-line-height;
-  color: $heading-font-color;
-  font-style: normal;
-  font-weight: 400;
-}
-
-blockquote cite:before {
-  content: "— ";
+  text-shadow: none;
 }
 
 @media only screen and (max-width: 480px) {
@@ -315,11 +304,11 @@ blockquote cite:before {
   }
 
   blockquote {
-    border-left: 0.28125rem solid #ff5700;
-    color: hsla(0, 0%, 0%, 0.59);
-    padding-left: 0.84375rem;
+    border-left: .28125rem solid $divider-color;
+    color: $blockquote-color;
     font-style: italic;
     margin-left: -$base-spacing;
     margin-right: 0;
+    padding: 0 0 0 1.21875rem;
   }
 }
