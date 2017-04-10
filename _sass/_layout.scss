@@ -1,78 +1,18 @@
-.container {
-  max-width: $content-width;
-  margin: 0 auto;
-}
-a,
-a:visited {
-  color: $link-color;
-  text-decoration: none;
-}
-a:hover {
-  color: $link-hover-color;
-  text-decoration: underline;
-}
-body {
-  margin: 0;
-  color: $font-color;
-  font-family: $font-style;
-  font-size: 1.1em;
-  line-height: 1.2;
-  -webkit-font-smoothing: antialiased;
-}
-code {
-  font-family: $code-font;
-  font-size: .9em;
-  line-height: 1;
-}
-h1 {
-  font-size: 2.5em;
-  line-height: 1.2;
-  margin-top: 1em;
-}
-h2 {
-  font-size: 2em;
-  margin-top: 2em;
-}
-h1,
-h2 {
-  color: $heading-font-color;
-  font-family: $heading-font;
-  font-weight: 900;
-  margin-bottom: .5em;
-  a,
-  a:visited {
-    text-decoration: none;
-    color: $heading-font-color;
-  }
-}
-h2,
-h3 {
-  line-height: 1;
-}
-h3 {
-  color: $subheading-font-color;
-  margin-top: .5em;
-  margin-bottom: .5em;
-  font-family: $subheading-font;
-  font-size: 1.5em;
-  font-weight: 200;
-}
-li {
-  margin-bottom: .3em;
-}
 main {
-  padding: 0 15px;
-  max-width: $content-width;
   margin: 0 auto;
+  max-width: $content-width;
+  padding: 0 $base-spacing;
 }
+
 p {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin: $base-spacing 0;
 }
+
 time {
-  color: #898989;
+  color: $primary-color-dark;
 }
+
 footer {
-  padding: $base-spacing;
   border-top: 1px solid $divider-color;
+  padding: $base-spacing 0;
 }
