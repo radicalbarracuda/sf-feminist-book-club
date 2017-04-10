@@ -129,7 +129,7 @@ erotic value, its erotic power and life appeal and fulfillment."
 
 For Lorde, the importance of the erotic is far beyond sexuality. The
 erotic is a tool to "inform an illuminate our actions" by recognizing
-our feelings, making us "less willing to accept powerlessness…despair,
+our feelings, making us "less willing to accept powerlessness...despair,
 self-effacement, depression, self-denial." In this way, she believes
 embracing the erotic is embracing power to create change "in the face of
 a racist, patriarchal, and anti-erotic society."
@@ -189,7 +189,7 @@ the lives of Black women, such as their 3x higher 80 percent fatality
 rate from breast cancer.
 
 "The oppression of women knows no ethnic nor racial boundaries, true,
-but that does not mean it is identical within those differences…To deal
+but that does not mean it is identical within those differences...To deal
 with one without even alluding to the other is to distort our
 commonality as well as our difference."
 
@@ -301,7 +301,7 @@ for it is in the painful process of this translation that we identify
 who are our allies with whom we have grave differences, and who are our
 genuine enemies."
 
-"…guilt is just another name for impotence, for defensiveness
+"...guilt is just another name for impotence, for defensiveness
 destructive of communication; it becomes a device to protect ignorance
 and the continuation of things the way they are, the ultimate protection
 for changelessness."
