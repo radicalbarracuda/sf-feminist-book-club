@@ -27,6 +27,6 @@ For more information about Jekyll development, check out the [usage documentatio
 
 ## Code of Conduct
 
-In order to have a more open and welcoming community, Radical Barracuda adheres to a [code of conduct](docs/CONTRIBUTING.md).
+In order to have a more open and welcoming community, Radical Barracuda adheres to a [code of conduct](docs/CONDUCT.md).
 
 Please adhere to this code of conduct in any interactions you have in this community. It is strictly enforced on all repositories, websites, and resources. If you encounter someone violating these terms, please let a maintainer (@dashland, @lizhubertz, @pamo) know and we will address it as soon as possible.
