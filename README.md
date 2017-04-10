@@ -1,6 +1,9 @@
 # SF Feminist Book Club
 
-This is a repository for feminist book club!
+This is a repository for the [San Francisco Feminist Book Club](https://radicalbarracuda.github.io/sf-feminist-book-club)!
+
+## Mission
+Our mission is to open source all of the materials and study guides we make for book club and other book club resources we use like our group discussion facilitation guidelines.
 
 ## Local Development
 
