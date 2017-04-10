@@ -8,9 +8,10 @@ tags: anti-racism anti-capitalism
 ---
 
 # From #BlackLivesMatter to Black Liberation
-by Keeanga-Yamahtta Taylor
+## by Keeanga-Yamahtta Taylor
 
-## Introduction
+### Introduction
+
 The #BlackLivesMatter movement began after George Zimmerman was acquitted for the murder of Trayvon Martin in 2013, and continued to grow in 2014 after white police officers killed Michael Brown in Ferguson and Eric Garner in NYC. While the #BlackLivesMatter movement started as a protest of police violence against Black people, it must be seen in the larger context of the War on Drugs and mass incarceration. "The systematic over imprisonment of Black people, and Black men in particular, has conflated race, risk, and criminality to legitimize close scrutiny of Black communities ... This crisis goes beyond high incarceration rates; indeed, the perpetuation of deeply ingrained stereotypes of African Americans as particularly dangerous, impervious to pain and suffering, careless and carefree, and exempt from empathy, solidarity, or basic humanity is what allows the police to kill Black people with no threat of punishment."
 
 Today the US is commonly talked about as a post-racial or "colorblind" society because explicit racial discrimination in law was overturned during the 60s. "The success of a relative few African Americans is upheld as a vindication of the United States' colorblind ethos and a testament to the transcendence of its racist past. Where there is bad treatment on the basis of race, it is viewed as the product of lapsed personal behavior and morality." The move towards "colorblind" policies has provided justification for "dismantling the state's capacity to challenge discrimination," which is a loss for white working people as well as people of color.
