@@ -1,4 +1,6 @@
 $content-width: 700px;
+$base-font-size: 1rem;
+$base-line-height: $base-font-size * 1.25;
 
 $type-scale: (
   -1: .75rem,  // small text
@@ -27,8 +29,6 @@ $line-heights: (
   line-height: line-height($level);
 }
 
-$base-font-size: type-scale(0);
-$base-line-height: line-height(1);
 $base-spacing: $base-line-height;
 $font-style: Crimson Text, serif;
 $monospaced-font: Consolas, 'Roboto Mono', 'Liberation Mono', Menlo, Courier, monospace;
@@ -85,7 +85,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $primary-font-color-dark;
+  color: $primary-text-color;
   font-family: $heading-font;
   font-weight: $heading-font-weight;
   line-height: line-height(2);
@@ -170,7 +170,7 @@ table {
   width: 100%;
 }
 
-$blockquote-color: $primary-text-dark;
+$blockquote-color: $primary-color;
 
 blockquote {
   border-left: .28125rem solid $divider-color;
@@ -285,7 +285,6 @@ $black: #000;
 $white: #fff;
 
 a {
-  background-image: linear-gradient(to top, $black, $black 1px, $link-color 1px, $link-color 2px, $black 2px);
   color: $link-color;
   text-decoration: none;
   text-shadow: .03em 0 $white, -.03em 0 $white, 0 .03em $white, 0 -.03em $white, .06em 0 $white, -.06em 0 $white, .09em 0 $white, -.09em 0 $white, .12em 0 $white, -.12em 0 $white, .15em 0 $white, -.15em 0 $white;
