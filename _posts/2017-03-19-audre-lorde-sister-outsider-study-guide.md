@@ -12,7 +12,7 @@ tags: feminism anti-racism anti-capitalism
 
 ### Introduction Question
 
-* Which essay stood out to you (positively or negatively) and why?
+Which essay stood out to you (positively or negatively) and why?
 
 ## Essay Summaries
 
