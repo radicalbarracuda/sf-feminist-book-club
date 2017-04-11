@@ -33,19 +33,15 @@ $line-heights: (
 $font-style: Crimson Text, serif;
 $monospaced-font: Consolas, 'Roboto Mono', 'Liberation Mono', Menlo, Courier, monospace;
 $bold-font-weight: 600;
-$font-color: hsla(0, 0%, 0%, .73);
-$contrast-background: hsla(0, 0%, 0%, .04);
 
-// Grey on black color palette
+$primary-text-color:        hsla(0, 0%, 0%, .73);
+$primary-text-color-dark:   darken($primary-text-color, 50%);
+$secondary-text-color: lighten($primary-text-color, 20%);
+$contrast-background: lighten($primary-text-color, 50%);
+$divider-color: lighten($primary-text-color, 50%);
 
-$primary-color-dark:   #455a64;
-$primary-color:        hsla(0, 0%, 0%, .73);
-$primary-text-color:   #212121;
-$secondary-text-color: #757575;
-$divider-color:        hsla(0, 0%, 0%, .2);
-
-$link-color: $primary-color;
-$link-hover-color: $primary-color-dark;
+$link-color: $primary-text-color;
+$link-hover-color: $primary-text-color-dark;
 
 $heading-font: 'Rosario', serif;
 $heading-font-color: $primary-text-color;
@@ -68,7 +64,7 @@ html {
 
 body {
   @include type-setting(0);
-  color: $primary-color;
+  color: $primary-text-color;
   font-family: $font-style;
   font-weight: 400;
   word-wrap: break-word;
@@ -88,7 +84,7 @@ h6 {
   color: $heading-font-color;
   font-family: $heading-font;
   font-weight: $heading-font-weight;
-  margin: line-height(2) 0 0 line-height(-1);
+  margin-bottom: line-height(1);
   padding: 0;
   text-rendering: optimizeLegibility;
 }
@@ -173,7 +169,7 @@ table {
   width: 100%;
 }
 
-$blockquote-color: $primary-color-dark;
+$blockquote-color: $primary-text-color-dark;
 
 blockquote {
   @include type-setting(2);
