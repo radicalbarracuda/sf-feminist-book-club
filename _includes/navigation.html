@@ -1,0 +1,18 @@
+<nav>
+    <ul>
+    {% for navitem in site.data.navigation %}
+        {% if navitem.category %}
+        <li>
+            <a href="{{ site.baseurl }}{{ navitem.url }}">{{ navitem.title }}</a>
+            <ul>
+            {% for post in site.categories[navitem.category] %}
+                <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+            {% endfor %}
+            </ul>
+        </li>
+        {% else %}
+        <li><a href="{{ site.baseurl }}{{ navitem.url }}">{{ navitem.title }}</a></li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+</nav>

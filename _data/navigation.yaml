@@ -1,0 +1,13 @@
+- title: Home
+  url: /
+
+- title: About
+  url: /about
+
+- title: SF Feminist Book Club
+  url: /feminist-book-club/
+  category: feminist-book-club
+
+- title: Anarchist Book Club
+  url: /anarchist-book-club/
+  category: anarchist-book-club
