@@ -1,4 +1,7 @@
 $content-width: 700px;
+$base-font-size: 1rem;
+$base-line-height: $base-font-size * 1.25;
+$base-spacing: $base-line-height;
 
 $type-scale: (
   -1: .75rem,  // small text
@@ -27,29 +30,22 @@ $line-heights: (
   line-height: line-height($level);
 }
 
-$base-font-size: type-scale(0);
-$base-line-height: line-height(1);
-$base-spacing: $base-line-height;
 $font-style: Crimson Text, serif;
 $monospaced-font: Consolas, 'Roboto Mono', 'Liberation Mono', Menlo, Courier, monospace;
 $bold-font-weight: 600;
-$font-color: hsla(0, 0%, 0%, .73);
-$contrast-background: hsla(0, 0%, 0%, .04);
 
-// Grey on black color palette
+$primary-text-color:        hsla(0, 0%, 0%, .73);
+$primary-text-color-dark:   darken($primary-text-color, 50%);
+$secondary-text-color: lighten($primary-text-color, 20%);
+$contrast-background: lighten($primary-text-color, 50%);
+$divider-color: lighten($primary-text-color, 50%);
 
-$primary-color-dark:   #455a64;
-$primary-color:        hsla(0, 0%, 0%, .73);
-$primary-text-color:   #212121;
-$secondary-text-color: #757575;
-$divider-color:        hsla(0, 0%, 0%, .2);
-
-$link-color: $primary-color;
-$link-hover-color: $primary-color-dark;
+$link-color: $primary-text-color;
+$link-hover-color: $primary-text-color-dark;
 
 $heading-font: 'Rosario', serif;
 $heading-font-color: $primary-text-color;
-$heading-font-weight: 700;
+$heading-font-weight: 900;
 
 $subheading-font: $heading-font;
 $subheading-font-color: $secondary-text-color;
@@ -62,13 +58,13 @@ html {
 }
 
 html {
-  font-size: $base-font-size;
-  line-height: $base-line-height;
+  @include type-setting(0);
   overflow-y: scroll;
 }
 
 body {
-  color: $primary-color;
+  @include type-setting(0);
+  color: $primary-text-color;
   font-family: $font-style;
   font-weight: 400;
   word-wrap: break-word;
@@ -85,52 +81,55 @@ h3,
 h4,
 h5,
 h6 {
-  color: $primary-font-color-dark;
+  color: $heading-font-color;
   font-family: $heading-font;
   font-weight: $heading-font-weight;
-  line-height: line-height(2);
-  margin: line-height(2) 0 0 line-height(-1);
+  margin-bottom: line-height(1);
   padding: 0;
   text-rendering: optimizeLegibility;
 }
 
 h1 {
-  font-size: type-setting(2);
+  @include type-setting(2);
 }
 
 h2 {
-  font-size: type-setting(1);
+  @include type-setting(1);
 }
 
 h3 {
-  font-size: type-setting(1);
+  @include type-setting(1);
+  color: $subheading-font-color;
+  font-weight: $bold-font-weight;
 }
 
 h4 {
-  font-size: type-setting(1);
+  @include type-setting(1);
+  color: $subheading-font-color;
+  font-weight: $bold-font-weight;
 }
 
 h5 {
-  font-size: type-setting(-1);
+  @include type-setting(-1);
+  color: $subheading-font-color;
   line-height: $base-line-height;
 }
 
 h6 {
-  font-size: type-setting(-1);
+  @include type-setting(-1);
   line-height: $base-line-height;
 }
 
 ul,
 ol {
   list-style-image: none;
-  list-style-position: inside;
   margin: 0 0 $base-spacing line-height(-1);
   padding: 0;
 }
 
 li > ol,
 li > ul {
-  margin: calc(${$base-spacing} / 2) 0 calc(${$base-spacing} / 2) $base-spacing;
+  margin: ($base-spacing / 2) 0 ($base-spacing / 2) $base-spacing;
 }
 
 dl,
@@ -147,9 +146,9 @@ noscript {
 
 
 pre {
+  @include type-setting(-1);
   background: $contrast-background;
   border-radius: 3px;
-  font-size: type-setting(-1);
   line-height: line-height(-1);
   margin: 0 0 0 $base-spacing;
   overflow: auto;
@@ -162,28 +161,28 @@ pre {
 }
 
 table {
+  @include type-setting(1);
   border-collapse: collapse;
-  font-size: type-setting(1);
   line-height: $base-line-height;
   margin: 0 0 0 $base-spacing;
   padding: 0;
   width: 100%;
 }
 
-$blockquote-color: $primary-text-dark;
+$blockquote-color: $primary-text-color-dark;
 
 blockquote {
+  @include type-setting(2);
   border-left: .28125rem solid $divider-color;
   color: $blockquote-color;
-  font-size: type-setting(2);
   font-style: italic;
   line-height: $base-line-height;
   margin: 0 0 0 $base-spacing;
   padding: 0 0 0 1.21875rem;
 
   cite {
+    @include type-setting(1);
     color: $heading-font-color;
-    font-size: type-setting(1);
     font-style: normal;
     font-weight: 400;
     line-height: $base-line-height;
@@ -214,7 +213,7 @@ th {
 }
 
 li {
-  margin-bottom: calc(${$base-spacing} / 2);
+  margin-bottom: ($base-spacing / 2);
 }
 
 ol li,
@@ -225,7 +224,7 @@ ul li {
 kbd,
 samp,
 code {
-  font-size: type-setting(-1);
+  @include type-setting(-1);
   line-height: $base-line-height;
 }
 
@@ -281,19 +280,17 @@ pre tt:after {
   content: '';
 }
 
-$black: #000;
-$white: #fff;
-
 a {
-  background-image: linear-gradient(to top, $black, $black 1px, $link-color 1px, $link-color 2px, $black 2px);
+  box-shadow: inset 0 -1px 0 0 #fff, inset 0 -2px 0 0 $link-color;
   color: $link-color;
   text-decoration: none;
-  text-shadow: .03em 0 $white, -.03em 0 $white, 0 .03em $white, 0 -.03em $white, .06em 0 $white, -.06em 0 $white, .09em 0 $white, -.09em 0 $white, .12em 0 $white, -.12em 0 $white, .15em 0 $white, -.15em 0 $white;
+  text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
 }
 
 a:hover,
 a:active {
   background-image: none;
+  box-shadow: none;
   text-shadow: none;
 }
 
