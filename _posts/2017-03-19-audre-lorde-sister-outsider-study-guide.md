@@ -1,9 +1,9 @@
 ---
 layout: posts
 title: "Sister Outsider by Audre Lorde"
+slug: "sister-outsider"
 date:   2017-03-19
-permalink: "/sister-outsider-study-guide/"
-categories: feminist-book-club
+categories: study-guides
 tags: feminism anti-racism anti-capitalism
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: posts
 title: "From #BlackLivesMatter to Black Liberation by Keeanga-Yamahtta Taylor"
+slug: "from-blacklivesmatter-to-black-liberation"
 date:   2016-12-18
-permalink: "/from-blacklivesmatter-to-black-liberation-study-guide/"
-categories: anarchist-book-club
+categories: study-guides
 tags: anti-racism anti-capitalism
 ---
 
