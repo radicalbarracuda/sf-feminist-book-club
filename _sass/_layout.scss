@@ -14,5 +14,7 @@ time {
 
 footer {
   border-top: 1px solid $divider-color;
-  padding: $base-spacing 0;
+  text-align: center;
+  padding: $base-spacing;
+  margin-top: $base-spacing;
 }
