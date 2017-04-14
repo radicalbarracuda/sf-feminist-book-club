@@ -172,11 +172,10 @@ table {
 $blockquote-color: $primary-text-color-dark;
 
 blockquote {
-  @include type-setting(2);
+  @include type-setting(1);
   border-left: .28125rem solid $divider-color;
   color: $blockquote-color;
   font-style: italic;
-  line-height: $base-line-height;
   margin: 0 0 0 $base-spacing;
   padding: 0 0 0 1.21875rem;
 
