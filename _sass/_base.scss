@@ -43,6 +43,9 @@ $divider-color: lighten($primary-text-color, 50%);
 $link-color: $primary-text-color;
 $link-hover-color: $primary-text-color-dark;
 
+$menu-background: hsla(0, 0%, 100%, 1.0);
+$menu-hover-background: hsla(0, 0%, 70%, 1.0);
+
 $heading-font: 'Rosario', serif;
 $heading-font-color: $primary-text-color;
 $heading-font-weight: 900;
