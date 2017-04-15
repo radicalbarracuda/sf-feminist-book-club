@@ -6,8 +6,7 @@ layout: index
 
 Is awesome!
 
-[About]({{ site.baseurl }}{% link _pages/about.md %})
-[Resources]({{ site.baseurl }}{% link _resources/index.md %})
+[About]({{ site.baseurl }}{% link _pages/about.md %}) | [Resources]({{ site.baseurl }}{% link _resources/index.md %})
 
 ## Study Guides
 <ul>
