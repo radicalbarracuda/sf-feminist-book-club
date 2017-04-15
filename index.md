@@ -9,3 +9,5 @@ Is awesome!
 [About]({{ site.baseurl }}{% link _pages/about.md %})
 
 [Political Theory]({{ site.baseurl }}{% link _pages/political-theory.md %})
+
+[Resources]({{ site.baseurl }}{% link _resources/index.md %})
