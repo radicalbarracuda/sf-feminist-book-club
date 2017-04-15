@@ -309,3 +309,9 @@ a:active {
     padding: 0 0 0 1.21875rem;
   }
 }
+
+@media print {
+  .no-print, .no-print * {
+    display: none !important;
+  }
+}
