@@ -7,6 +7,8 @@ baseurl: "/sf-feminist-book-club" # the subpath of your site, e.g. /blog
 url: "https://radicalbarracuda.github.io"
 permalink: /:categories/:title/
 # Build settings
+gems:
+  - jekyll-sitemap
 sass:
   sass_dir: _sass
 kramdown:
