@@ -3,19 +3,9 @@ $base-font-size: 1rem;
 $base-line-height: $base-font-size * 1.25;
 $base-spacing: $base-line-height;
 
-$type-scale: (
-  -1: .75rem,  // small text
-  0: 1rem,      // body text
-  1: 1.333rem,  // large text
-  2: 1.777rem   // main heading
-);
+$type-scale: (-1: .75rem, 0: 1rem, 1: 1.333rem, 2: 1.777rem);
 
-$line-heights: (
-  -1: $base-line-height * .6667,
-  0: $base-line-height,
-  1: $base-line-height * 1.25,
-  2: $base-line-height * 2
-);
+$line-heights: (-1: $base-line-height * .6667, 0: $base-line-height, 1: $base-line-height * 1.25, 2: $base-line-height * 2);
 
 @function type-scale($level) {
   @return map-get($type-scale, $level);
@@ -30,12 +20,12 @@ $line-heights: (
   line-height: line-height($level);
 }
 
-$font-style: Crimson Text, serif;
+$font-style: 'Crimson Text', serif;
 $monospaced-font: Consolas, 'Roboto Mono', 'Liberation Mono', Menlo, Courier, monospace;
 $bold-font-weight: 600;
 
-$primary-text-color:        hsla(0, 0%, 0%, .73);
-$primary-text-color-dark:   darken($primary-text-color, 50%);
+$primary-text-color: hsla(0, 0%, 0%, .73);
+$primary-text-color-dark: darken($primary-text-color, 50%);
 $secondary-text-color: lighten($primary-text-color, 20%);
 $contrast-background: lighten($primary-text-color, 50%);
 $divider-color: lighten($primary-text-color, 50%);
@@ -51,19 +41,19 @@ $subheading-font: $heading-font;
 $subheading-font-color: $secondary-text-color;
 
 *,
-*::before,
-*::after,
 html {
   box-sizing: border-box;
 }
 
 html {
   @include type-setting(0);
+
   overflow-y: scroll;
 }
 
 body {
   @include type-setting(0);
+
   color: $primary-text-color;
   font-family: $font-style;
   font-weight: 400;
@@ -99,24 +89,28 @@ h2 {
 
 h3 {
   @include type-setting(1);
+
   color: $subheading-font-color;
   font-weight: $bold-font-weight;
 }
 
 h4 {
   @include type-setting(1);
+
   color: $subheading-font-color;
   font-weight: $bold-font-weight;
 }
 
 h5 {
   @include type-setting(-1);
+
   color: $subheading-font-color;
   line-height: $base-line-height;
 }
 
 h6 {
   @include type-setting(-1);
+
   line-height: $base-line-height;
 }
 
@@ -144,9 +138,9 @@ noscript {
   padding: 0;
 }
 
-
 pre {
   @include type-setting(-1);
+
   background: $contrast-background;
   border-radius: 3px;
   line-height: line-height(-1);
@@ -157,11 +151,24 @@ pre {
   code {
     background: none;
     line-height: line-height(1);
+
+    &::before,
+    &::after {
+      content: '';
+    }
+  }
+
+  tt {
+    &::before,
+    &::after {
+      content: '';
+    }
   }
 }
 
 table {
   @include type-setting(1);
+
   border-collapse: collapse;
   line-height: $base-line-height;
   margin: 0 0 0 $base-spacing;
@@ -173,6 +180,7 @@ $blockquote-color: $primary-text-color-dark;
 
 blockquote {
   @include type-setting(1);
+
   border-left: .28125rem solid $divider-color;
   color: $blockquote-color;
   font-style: italic;
@@ -181,6 +189,7 @@ blockquote {
 
   cite {
     @include type-setting(1);
+
     color: $heading-font-color;
     font-style: normal;
     font-weight: 400;
@@ -196,7 +205,7 @@ hr {
   background: $divider-color;
   border: 0;
   height: 1px;
-  margin: 0 0 0 calc(${$base-spacing} - 1px);
+  margin: 0 0 0 calc($base-spacing - 1px);
   padding: 0;
 }
 
@@ -208,18 +217,21 @@ th {
 }
 
 li {
-  margin-bottom: ($base-spacing / 2);
+  margin-bottom: $base-spacing / 2;
 }
 
-ol li,
-ul li {
-  padding-left: 0;
+ol,
+ul {
+  li {
+    padding-left: 0;
+  }
 }
 
 kbd,
 samp,
 code {
   @include type-setting(-1);
+
   line-height: $base-line-height;
 }
 
@@ -242,14 +254,15 @@ th {
   padding: .75rem 1rem calc(.75rem - 1px);
 }
 
-th:first-child,
-td:first-child {
-  padding-left: 0;
-}
+th,
+td {
+  &:first-child {
+    padding-left: 0;
+  }
 
-th:last-child,
-td:last-child {
-  padding-right: 0;
+  &:last-child {
+    padding-right: 0;
+  }
 }
 
 tt,
@@ -258,21 +271,12 @@ code {
   border-radius: 3px;
   font-family: $monospaced-font;
   padding: .2em 0;
-}
 
-code:before,
-code:after,
-tt:before,
-tt:after {
-  content: ' ';
-  letter-spacing: -.2em;
-}
-
-pre code:before,
-pre code:after,
-pre tt:before,
-pre tt:after {
-  content: '';
+  &::before,
+  &::after {
+    content: ' ';
+    letter-spacing: -.2em;
+  }
 }
 
 @mixin fancy-anchor-underlines($line-color, $shadow-color: #fff) {
@@ -284,13 +288,13 @@ pre tt:after {
 a {
   @include fancy-anchor-underlines($link-color);
   color: $link-color;
-}
 
-a:hover,
-a:active {
-  background-image: none;
-  box-shadow: none;
-  text-shadow: none;
+  &:hover,
+  &:active {
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -310,7 +314,8 @@ a:active {
 }
 
 @media print {
-  .no-print, .no-print * {
-    display: none !important;
+  .no-print,
+  & * {
+    display: none;
   }
 }

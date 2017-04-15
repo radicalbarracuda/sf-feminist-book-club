@@ -26,16 +26,16 @@ $tag-radius: 3px;
   margin: $base-spacing 0;
 
   a {
-    padding: $base-spacing / 4;
-    margin: 0 ($base-spacing / 4);
-    white-space: nowrap;
     background-color: $tag-bg-color;
+    border-radius: $tag-radius;
+    box-shadow: none;
     color: $tag-link-color;
+    margin: 0 ($base-spacing / 4);
+    padding: $base-spacing / 4;
     text-decoration: none;
     text-shadow: none;
-    box-shadow: none;
-    border-radius: $tag-radius;
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color .2s ease-in-out;
+    white-space: nowrap;
 
     &:first-of-type {
       margin-left: 0;
