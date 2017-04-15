@@ -275,11 +275,15 @@ pre tt:after {
   content: '';
 }
 
-a {
-  box-shadow: inset 0 -1px 0 0 #fff, inset 0 -2px 0 0 $link-color;
-  color: $link-color;
+@mixin fancy-anchor-underlines($line-color, $shadow-color: #fff) {
+  box-shadow: inset 0 -1px 0 0 $shadow-color, inset 0 -2px 0 0 $line-color;
   text-decoration: none;
-  text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+  text-shadow: 1px 1px 0 $shadow-color, -1px 1px 0 $shadow-color, 1px 0 0 $shadow-color, -1px 0 0 $shadow-color;
+}
+
+a {
+  @include fancy-anchor-underlines($link-color);
+  color: $link-color;
 }
 
 a:hover,
