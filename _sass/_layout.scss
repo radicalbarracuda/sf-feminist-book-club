@@ -35,6 +35,7 @@ $tag-radius: 3px;
     text-shadow: none;
     box-shadow: none;
     border-radius: $tag-radius;
+    transition: background-color 0.2s ease-in-out;
 
     &:first-of-type {
       margin-left: 0;
@@ -42,6 +43,10 @@ $tag-radius: 3px;
 
     &:hover {
       background-color: darken($tag-bg-color, 5%);
+    }
+
+    &:active {
+      transform: translateY(1px);
     }
   }
 }
