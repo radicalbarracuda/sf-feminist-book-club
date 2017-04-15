@@ -9,6 +9,7 @@ permalink: /:categories/:title/
 # Build settings
 gems:
   - jekyll-sitemap
+  - jemoji
 sass:
   sass_dir: _sass
 kramdown:
