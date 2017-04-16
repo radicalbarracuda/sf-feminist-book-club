@@ -1,12 +1,15 @@
 title: SF Feminist Book Club
 email: radicalbarracuda@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Codify our practices and the reasoning behind them. Open source our study
-  guides and materials.
+  Open source SF Feminist Book Club study guides and materials and a registry of our practices and the reasoning behind them.
 baseurl: "/sf-feminist-book-club" # the subpath of your site, e.g. /blog
 url: "https://radicalbarracuda.github.io"
 permalink: /:categories/:title/
 # Build settings
+gems:
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-seo-tag
 sass:
   sass_dir: _sass
 kramdown:
