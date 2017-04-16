@@ -16,3 +16,37 @@ footer {
   border-top: 1px solid $divider-color;
   padding: $base-spacing 0;
 }
+
+$tag-bg-color: #f1f8ff;
+$tag-link-color: #0366d6;
+$tag-radius: 3px;
+
+.tags {
+  display: flex;
+  margin: $base-spacing 0;
+
+  a {
+    background-color: $tag-bg-color;
+    border-radius: $tag-radius;
+    box-shadow: none;
+    color: $tag-link-color;
+    margin: 0 ($base-spacing / 4);
+    padding: $base-spacing / 4;
+    text-decoration: none;
+    text-shadow: none;
+    transition: background-color .2s ease-in-out;
+    white-space: nowrap;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    &:hover {
+      background-color: darken($tag-bg-color, 5%);
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+}
