@@ -11,7 +11,7 @@ collections:
 
 # Build settings
 sass:
-  sass_dir: _scss
+  sass_dir: _sass
 kramdown:
   input: GFM
 include:
