@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ site.title }}</title>
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link href="//fonts.googleapis.com/css?family=Rosario:700|Crimson+Text:400,400i,600" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<main>
+
+  <p class="no-print"><a href="{{ site.baseurl }}/">< Back to Home</a></p>
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.date | date: "%B %-d, %Y @ %-I:%M %p" }}</p>
+  <p><a href="https://www.meetup.com/SF-Feminist-Book-Club/events/{{ page.meetup_identifier }}"target="_blank">
+    {% capture now %}{{'now' | date: '%s'}}{% endcapture %}
+    {% capture event_time %}{{page.date | date: '%s'}}{% endcapture %}
+    {% if event_time > now %}
+      RSVP on Meetup
+    {% else %}
+      View on Meetup
+    {% endif %}
+  </a></p>
+  <h2>Reading</h2>
+  <ul>
+    {% for reading in site.readings %}
+      {% if page.reading_identifiers contains reading.identifier %}
+        <li>
+          <strong>{{ reading.title }}</strong>
+          {% if reading.authors %} by {{ reading.authors }} {% endif %}
+          {% if reading.editors %} edited by {{ reading.editors }} {% endif %}
+          <ul>
+            {% if reading.study_guide_identifier %}
+              {% assign study_guide = site.study-guides | where: "identifier", reading.study_guide_identifier | first %}
+              <li><a href="{{ study_guide.url | prepend: site.baseurl  }}">Study Guide</a></li>
+            {% endif %}
+            {% if reading.goodreads_url %}
+              <li><a href="{{ reading.goodreads_url }}" target="_blank">View on Goodreads</a></li>
+            {% endif %}
+            {% if reading.amazon_url %}
+              <li><a href="{{ reading.amazon_url }}" target="_blank">View on Amazon</a></li>
+            {% endif %}
+          </ul>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</main>
+</body>
+
+</html>

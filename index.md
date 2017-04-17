@@ -4,18 +4,15 @@ layout: index
 
 # SF Feminist Book Club
 
-Is awesome!
-
 [About]({{ site.baseurl }}{% link _pages/about.md %}) \| [Resources]({{ site.baseurl }}{% link _resources/index.md %})
 
-## Study Guides
+<div>
 <ul>
-  {% for post in site.posts %}
-    {% if post.categories contains 'study-guides' %}
-    <li>
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </li>
-    {%endif %}
+  {% assign events = site.events | sort: 'date' %}
+  {% for event in events reversed %}
+  <li>
+    <a href="{{ event.url | prepend: site.baseurl  }}">{{ event.title }}</a>
+  </li>
   {% endfor %}
 </ul>
-
+</div>
