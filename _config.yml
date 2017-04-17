@@ -12,6 +12,7 @@ collections:
   readings:
   study-guides:
     output: true
+    permalink: /:collection/:slug
 defaults:
   - scope:
       path: ""
