@@ -2,9 +2,7 @@
 layout: index
 ---
 
-# SF Feminist Book Club
-
-[About]({{ site.baseurl }}{% link _pages/about.md %}) \| [Resources]({{ site.baseurl }}{% link _resources/index.md %})
+# Events
 
 <div>
 <ul>
