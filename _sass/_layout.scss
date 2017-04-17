@@ -16,3 +16,14 @@ footer {
   border-top: 1px solid $divider-color;
   padding: $base-spacing 0;
 }
+
+.bio {
+  display: inline-block;
+  img {
+    height: 250px;
+    width: 250px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
