@@ -6,7 +6,26 @@ baseurl: "/sf-feminist-book-club" # the subpath of your site, e.g. /blog
 url: "https://radicalbarracuda.github.io"
 permalink: /:categories/:title/
 collections:
+  events:
+    output: true
+    permalink: /:collection/:slug
+  readings:
+  study-guides:
+    output: true
+    permalink: /:collection/:slug
   people:
+defaults:
+  - scope:
+      path: ""
+      type: events
+    values:
+      layout: events
+      categories: discussion
+  - scope:
+      path: ""
+      type: study-guides
+    values:
+      layout: study-guides
 
 # Build settings
 gems:

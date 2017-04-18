@@ -1,20 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>{{ site.title }}</title>
-
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link href="//fonts.googleapis.com/css?family=Rosario:700|Crimson+Text:400,400i,600" rel="stylesheet" type="text/css">
+  {% include default-head.html %}
 </head>
 
 <body>
 <main>
-  <p class="no-print"><a href="{{ site.baseurl }}/">< Back to Home</a></p>
+  {% include navigation.html %}
   {{ content }}
 </main>
 </body>

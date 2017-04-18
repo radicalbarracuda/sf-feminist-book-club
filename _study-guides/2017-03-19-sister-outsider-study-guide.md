@@ -1,10 +1,6 @@
 ---
-layout: posts
-title: "Sister Outsider by Audre Lorde"
-slug: "sister-outsider"
-date:   2017-03-19
-categories: study-guides
-tags: feminism anti-racism anti-capitalism
+identifier: sister-outsider
+slug: sister-outsider
 ---
 
 # Sister Outsider
