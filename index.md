@@ -6,7 +6,7 @@ layout: index
 
 <div>
 <ul>
-  {% assign events = site.events | sort: 'date' %}
+  {% assign events = site.events | sort: 'datetime' %}
   {% for event in events reversed %}
   <li>
     <a href="{{ event.url | prepend: site.baseurl  }}">{{ event.title }}</a>
