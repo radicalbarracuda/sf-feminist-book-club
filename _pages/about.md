@@ -1,5 +1,5 @@
 ---
-layout: pages
+layout: default
 title:  "About Radical Barracuda"
 permalink: "/about/"
 categories: about
