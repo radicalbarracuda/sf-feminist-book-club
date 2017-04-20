@@ -1,5 +1,5 @@
 ---
-layout: pages
+layout: default
 title:  "Resources"
 permalink: "/resources/"
 categories: resources
