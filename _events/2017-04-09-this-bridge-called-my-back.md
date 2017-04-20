@@ -1,7 +1,7 @@
 ---
 identifier: this-bridge-called-my-back
 slug: this-bridge-called-my-back
-title: "April Book Club"
+title: "April 2017 Book Club"
 datetime: "2017-04-09 14:00:00"
 meetup_identifier: "237039302"
 reading_identifiers:
