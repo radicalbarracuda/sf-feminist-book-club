@@ -4,12 +4,12 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
-<p>{{ page.datetime | datetime: "%B %-d, %Y @ %-I:%M %p" }}</p>
+<p>{{ page.datetime | date: "%B %-d, %Y @ %-I:%M %p" }}</p>
 <p>
   <a href="https://www.meetup.com/SF-Feminist-Book-Club/events/{{ page.meetup_identifier }}"
      target="_blank" >
-  {% capture now %}{{'now' | datetime: '%s'}}{% endcapture %}
-  {% capture event_time %}{{page.datetime | datetime: '%s'}}{% endcapture %}
+  {% capture now %}{{'now' | date: '%s'}}{% endcapture %}
+  {% capture event_time %}{{page.datetime | date: '%s'}}{% endcapture %}
   {% if event_time > now %}
     RSVP on Meetup
   {% else %}
