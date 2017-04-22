@@ -2,10 +2,6 @@
 identifier: sister-outsider
 slug: sister-outsider
 ---
-
-# Sister Outsider
-## by Audre Lorde
-
 ### Introduction Question
 
 Which essay stood out to you (positively or negatively) and why?

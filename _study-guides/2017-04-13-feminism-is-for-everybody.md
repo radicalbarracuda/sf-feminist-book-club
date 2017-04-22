@@ -2,11 +2,6 @@
 identifier: feminism-is-for-everybody
 slug: feminism-is-for-everybody
 ---
-
-
-# Feminism is for Everybody
-## by bell hooks
-
 **Introduction Question:** Was there any one chapter that stood out to you or challenged your view of feminism, and why?
 
 ## Overview
@@ -47,7 +42,7 @@ bell hooks describes Revolutionary feminism (what today we would call intersecti
 
 #### Lifestyle Feminism
 
-bell hooks describes Lifestyle feminism to challenge the notion that all women are feminists simply by virtue of identifying as female.  Lifestyle feminism is the notion that there can be as many versions of feminism as there are women. Instead of a political commitment, feminism becomes a kind of lifestyle - a cool "THE FUTURE IS FEMALE" t-shirt that any woman can wear without fundamentally challenging and changing themselves or the culture. For hooks, this is not ok. Feminism is a political commitment to end oppression, not something you are born into.
+bell hooks describes Lifestyle feminism to challenge the notion that all women are feminists simply by virtue of identifying as female.  Lifestyle feminism is the notion that there can be as many versions of feminism as there are women. Instead of a political commitment, feminism becomes a kind of lifestyle - a cool "THE FUTURE IS FEMALE" t-shirt that any woman can wear without fundamentally challenging and changing themselves or the culture. For hooks, this is not OK. Feminism is a political commitment to end oppression, not something you are born into.
 
 hooks gives the controversial example of abortion:
 
@@ -76,7 +71,7 @@ Importantly, she defines female solidarity as going beyond "positive recognition
 
 As an example of this kind of solidarity, she describes a feminist response for women with class privilege when hiring domestic help:
 
-> Some of those women successfully created positive bonding between themselves and the women they hired so that there could be mutual advancement in a larger context of inequality. Rather than abandoning the vision of sisterhood, because they could not attain some utopian state, they created a real sisterhood, one that took into account the needs of everyone involved. This was the hard work of feminist solidarity between women.
+> Some of those women successfully created positive bonding between themselves and the women they hired so that there could be mutual advancement in a larger context of inequality. Rather than abandoning the vision of sisterhood, because they could not attain some Utopian state, they created a real sisterhood, one that took into account the needs of everyone involved. This was the hard work of feminist solidarity between women.
 
 **Discussion Questions:**
 
@@ -98,13 +93,13 @@ Because of this, hooks pushes for accessible feminist theory that goes far beyon
 **Discussion Questions:**
 
 - Is there anything in your life you wish you could examine more, to find the "root" of why you think, feel, or act a certain way?
-- What do you think about hooks' strategies (a feminist TV network! songs! radio!) to disperse feminist education?
+- What do you think about hooks' strategies (A feminist TV network! Songs! Radio!) to disperse feminist education?
 
 ### 5: Our Bodies, Ourselves: Reproductive Rights
 
 Reproductive rights has since the beginning been a cornerstone of the feminist movement. It has also been a point of contention and is almost always associated exclusively with the right to abortion. This focus on abortion rather than reproductive rights as a whole reflects the class and race biases of the second wave feminist movement. Privileged women were most interested in access to birth control, while economically disadvantaged and racially targeted women were often concerned with the right to _have_ children: freedom from forced sterilization, for example.
 
-This does not mean that abortion is not an important issue in feminist politics, but that feminist reproductive politics must include ALL reproductive rights - including the right to choose to bear children - as well as access to women's healthcare across class lines.  
+This does not mean that abortion is not an important issue in feminist politics, but that feminist reproductive politics must include ALL reproductive rights - including the right to choose to bear children - as well as access to women's healthcare across class lines.
 
 ### 6: Beauty Within and Without
 
@@ -120,7 +115,7 @@ For bell hooks, feminist liberation MUST include social change that challenges c
 
 Feminism exists in a "white supremacist capitalist patriarchal Western culture" and is not immune from its power dynamics. At its inception, the feminist movement was not about women gaining freedom from patriarchal oppression globally. Instead, it was used by women of privilege to gain more class mobility - who then wanted to "reach out" to women of other cultures to "save" them from their oppression. All of this without a political commitment to end Western imperialist policies and transnational capitalism that are economically and militaristically oppressing these women.
 
-A radical feminist perspective instead examines how sexist practices globally are linked non-hierarchically. Instead of saying, "your sexism is worse than ours, so we can save you," we can recognize "your symptoms of patriarchy are different from ours, but they are ALL bad and come from the same root - so we can all struggle together."  
+A radical feminist perspective instead examines how sexist practices globally are linked non-hierarchically. Instead of saying, "your sexism is worse than ours, so we can save you," we can recognize "your symptoms of patriarchy are different from ours, but they are ALL bad and come from the same root - so we can all struggle together."
 
 ### 9: Women at Work
 
@@ -158,13 +153,13 @@ Another problem with the early feminist movement was its exclusive focus on the 
 
 > Children need to be raised in loving environments. Whenever domination is present love is lacking. Loving parents, be they single or coupled, gay or straight, headed by females or males, are more likely to raise healthy, happy children with sound self-esteem.
 
->  Ending patriarchal domination of children, by men or women, is the only way to make the family a place where children can be safe, where they can be free, where they can know love.  
+>  Ending patriarchal domination of children, by men or women, is the only way to make the family a place where children can be safe, where they can be free, where they can know love.
 
 ### 14: Liberating Marriage and Partnership
 
 Feminism is not against marriage or heterosexual partnership. Feminism is against sexist-defined notions of partnership that are destructive to principles of equality and mutual respect. Feminist politics means breaking down the individual biases against men doing traditionally "female" work in the home, but it also means fighting for structural changes that _allow_ both parents to take an active role in the home. For example, feminist politics requires a critique and restructuring of the way we value work and spend time at work:
 
-> Until we see major changes in the way work is structured timewise, we will not live in a world where life is designed to allow men the time and space to parent. In that world men might be more eager to parent. But until then, many working males who are overtired and underpaid
+> Until we see major changes in the way work is structured time wise, we will not live in a world where life is designed to allow men the time and space to parent. In that world men might be more eager to parent. But until then, many working males who are overtired and underpaid
 will all too willingly accept a woman doing all the child care, even if she is overtired and underpaid.
 
 ### 15: A Feminist Sexual Politic: An Ethics of Mutual Freedom
@@ -177,7 +172,7 @@ Feminist sexuality also means updating our value system, so that we understand t
 
 Lesbianism and feminism are often thought of together, but just like being female does not make someone a feminist, being a lesbian does not make someone a feminist either. That said, lesbians have had an important role in the feminist movement, bringing a perspective that challenged the dominant heterosexual feminist theory and also brought to the forefront issues of race and class. Because they were part of an oppressed group that did not conform to mainstream standards, lesbians were more likely to tackle issues of race, class, homophobia, and the issue that feminism ignored the experience of male-identified people.
 
-> Without radical lesbian input feminist theory and practice would never have dared to push against the boundaries of heterosexism to create spaces where women, all women, irrespective of their sexual identity and/ or preference, could and can be as free as they want to be.
+> Without radical lesbian input feminist theory and practice would never have dared to push against the boundaries of hetero-sexism to create spaces where women, all women, irrespective of their sexual identity and/ or preference, could and can be as free as they want to be.
 
 ### 17: To Love Again: The Heart of Feminism
 
