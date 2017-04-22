@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: index
+redirect_from: "/study-guides/"
 ---
 
 # Events
