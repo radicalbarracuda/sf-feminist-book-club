@@ -32,6 +32,7 @@ gems:
   - jekyll-sitemap
   - jemoji
   - jekyll-seo-tag
+  - jekyll-redirect-from
 sass:
   sass_dir: _sass
 kramdown:

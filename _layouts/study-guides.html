@@ -1,9 +1,18 @@
----
-layout: default
----
-
-{{ content }}
-
-<footer class="no-print">
-  <a href="javascript:window.print();">Print this post</a>
-</footer>
+<!DOCTYPE html>
+<html>
+<head>
+  {% include default-head.html %}
+</head>
+<body>
+  <main>
+  {% include navigation.html %}
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
+  {{ content }}
+  <footer class="no-print">
+    <a href="javascript:window.print();">Print this post</a>
+  </footer>
+  </main>
+</body>
+</html>
